@@ -1,6 +1,6 @@
 import React from "react";
 
-const Post = () => {
+const Post = (props) => {
   return (
     <div className="flex flex-col">
       <div className="flex items-center justify-between w-full p-3">
@@ -8,7 +8,7 @@ const Post = () => {
           <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-rose-500 p-0.5 rounded-full">
             <div className="w-full h-full bg-white rounded-full p-0.5">
               <img
-                src="https://scontent-cgk2-1.xx.fbcdn.net/v/t39.30808-6/439941705_7784491211612537_4746747856880066593_n.png?stp=dst-jpg&_nc_cat=1&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeFcwt-Wu1uG_Xj37D_oitwjWg5QjztinStaDlCPO2KdKzf-4M8MLZy3iqEjOo6glYeCh9XRsag7EXRjVCjGFKko&_nc_ohc=sHnS-HvMYLAQ7kNvgH5yM7g&_nc_ht=scontent-cgk2-1.xx&_nc_gid=AACafLOfwTxlLnODTjMKcJt&oh=00_AYAxs2btM25nMwepQ1OdE8pkukuec0MCjMJBffUWOZPioQ&oe=6702B6A6"
+                src={props.foto}
                 alt=""
                 className="object-cover w-full h-full rounded-full"
               />
@@ -34,11 +34,11 @@ const Post = () => {
         </div>
       </div>
 
-      <div className="w-full h-72 bg-gray-200">
+      <div className="w-full h-auto bg-gray-200">
         <img
-          src="https://scontent-cgk2-1.xx.fbcdn.net/v/t39.30808-6/439941705_7784491211612537_4746747856880066593_n.png?stp=dst-jpg&_nc_cat=1&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeFcwt-Wu1uG_Xj37D_oitwjWg5QjztinStaDlCPO2KdKzf-4M8MLZy3iqEjOo6glYeCh9XRsag7EXRjVCjGFKko&_nc_ohc=sHnS-HvMYLAQ7kNvgH5yM7g&_nc_ht=scontent-cgk2-1.xx&_nc_gid=AACafLOfwTxlLnODTjMKcJt&oh=00_AYAxs2btM25nMwepQ1OdE8pkukuec0MCjMJBffUWOZPioQ&oe=6702B6A6"
+          src={props.foto}
           alt=""
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-auto"
         />
       </div>
       <div className="flex items-center justify-between p-3">
